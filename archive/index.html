@@ -1,0 +1,5951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="A Boring Website">
+    <meta name="keywords"  content="">
+    <meta name="theme-color" content="">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Archive - ">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="「我干了什么 究竟拿了时间换了什么」">
+    
+    <meta property="og:image" content="http://ifyoufindtheearthboring.com">
+    <meta property="og:url" content="http://ifyoufindtheearthboring.com/archive/">
+    <meta property="og:site_name" content="">
+    
+    <title>Archive - </title>
+
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="/pwa/manifest.json">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="http://ifyoufindtheearthboring.com/archive/">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/hux-blog.min.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+
+    <!-- Navigation -->
+
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">If You Find The Earth Boring...</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="huxblog_navbar">
+                <div class="navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="/">Home</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        <li>
+                            <a href="/about/">About</a>
+                        </li>
+                        
+                        
+                        
+                        <li>
+                            <a href="/archive/">Archive</a>
+                        </li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <li class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <script>
+        // Drop Bootstarp low-performance Navbar
+        // Use customize navbar with high-quality material design animation
+        // in high-perf jank-free CSS3 implementation
+        var $body = document.body;
+        var $toggle = document.querySelector('.navbar-toggle');
+        var $navbar = document.querySelector('#huxblog_navbar');
+        var $collapse = document.querySelector('.navbar-collapse');
+
+        var __HuxNav__ = {
+            close: function () {
+                $navbar.className = " ";
+                // wait until animation end.
+                setTimeout(function () {
+                    // prevent frequently toggle
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = "0px"
+                    }
+                }, 400)
+            },
+            open: function () {
+                $collapse.style.height = "auto"
+                $navbar.className += " in";
+            }
+        }
+
+        // Bind Event
+        $toggle.addEventListener('click', function (e) {
+            if ($navbar.className.indexOf('in') > 0) {
+                __HuxNav__.close()
+            } else {
+                __HuxNav__.open()
+            }
+        })
+
+        /**
+         * Since Fastclick is used to delegate 'touchstart' globally
+         * to hack 300ms delay in iOS by performing a fake 'click',
+         * Using 'e.stopPropagation' to stop 'touchstart' event from 
+         * $toggle/$collapse will break global delegation.
+         * 
+         * Instead, we use a 'e.target' filter to prevent handler
+         * added to document close HuxNav.  
+         *
+         * Also, we use 'click' instead of 'touchstart' as compromise
+         */
+        document.addEventListener('click', function (e) {
+            if (e.target == $toggle) return;
+            if (e.target.className == 'icon-bar') return;
+            __HuxNav__.close();
+        })
+    </script>
+    <!-- Search -->
+<div class="search-page">
+  <div class="search-icon-close-container">
+    <span class="search-icon-close">
+      <i class="fa fa-chevron-down"></i>
+    </span>
+  </div>
+  <div class="search-main container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <form></form>
+        <input type="text" id="search-input" placeholder="$ grep...">
+        </form>
+        <div id="search-results" class="mini-post-list"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- 
+Credits: this page shamelessly borrowed a lot from:
+https://github.com/kitian616/jekyll-TeXt-theme
+-->
+<!-- Page Header -->
+
+
+
+
+
+
+
+<header class="intro-header" style="background-image: url('/img/tag-bg.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        
+        <div class="site-heading" id="tag-heading">
+        
+          <h1>Archive</h1>
+          <span class="subheading">「我干了什么 究竟拿了时间换了什么」</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<!-- Main Content -->
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+			<!-- Tags (as filter) -->
+			<div id='tag_cloud' class="tags tags-sup js-tags">
+				<a class="tag-button--all" data-encode="">
+					Show All
+					<sup>170</sup>
+				</a>
+
+				
+        
+				
+				
+				
+				<a data-sort="0141"
+					data-encode="music"
+					class="tag-button"
+					title="music" rel="29">
+					music
+					<sup>29</sup>
+				</a>
+				
+				<a data-sort="0157"
+					data-encode="film"
+					class="tag-button"
+					title="film" rel="13">
+					film
+					<sup>13</sup>
+				</a>
+				
+				<a data-sort="0158"
+					data-encode="photography"
+					class="tag-button"
+					title="photography" rel="12">
+					photography
+					<sup>12</sup>
+				</a>
+				
+				<a data-sort="0160"
+					data-encode="graphic-design"
+					class="tag-button"
+					title="graphic-design" rel="10">
+					graphic-design
+					<sup>10</sup>
+				</a>
+				
+				<a data-sort="0160"
+					data-encode="jazz"
+					class="tag-button"
+					title="jazz" rel="10">
+					jazz
+					<sup>10</sup>
+				</a>
+				
+				<a data-sort="0161"
+					data-encode="favorite-blogs"
+					class="tag-button"
+					title="favorite-blogs" rel="9">
+					favorite-blogs
+					<sup>9</sup>
+				</a>
+				
+				<a data-sort="0163"
+					data-encode="art"
+					class="tag-button"
+					title="art" rel="7">
+					art
+					<sup>7</sup>
+				</a>
+				
+				<a data-sort="0163"
+					data-encode="favorites-of-2010"
+					class="tag-button"
+					title="favorites-of-2010" rel="7">
+					favorites-of-2010
+					<sup>7</sup>
+				</a>
+				
+				<a data-sort="0164"
+					data-encode="portland"
+					class="tag-button"
+					title="portland" rel="6">
+					portland
+					<sup>6</sup>
+				</a>
+				
+				<a data-sort="0165"
+					data-encode="documentaries"
+					class="tag-button"
+					title="documentaries" rel="5">
+					documentaries
+					<sup>5</sup>
+				</a>
+				
+				<a data-sort="0165"
+					data-encode="france"
+					class="tag-button"
+					title="france" rel="5">
+					france
+					<sup>5</sup>
+				</a>
+				
+				<a data-sort="0165"
+					data-encode="movies"
+					class="tag-button"
+					title="movies" rel="5">
+					movies
+					<sup>5</sup>
+				</a>
+				
+				<a data-sort="0166"
+					data-encode="europe"
+					class="tag-button"
+					title="europe" rel="4">
+					europe
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0166"
+					data-encode="favorites-of-2011"
+					class="tag-button"
+					title="favorites-of-2011" rel="4">
+					favorites-of-2011
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0166"
+					data-encode="npr"
+					class="tag-button"
+					title="npr" rel="4">
+					npr
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0166"
+					data-encode="sun-ra"
+					class="tag-button"
+					title="sun-ra" rel="4">
+					sun-ra
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0166"
+					data-encode="video"
+					class="tag-button"
+					title="video" rel="4">
+					video
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0166"
+					data-encode="warp-records"
+					class="tag-button"
+					title="warp-records" rel="4">
+					warp-records
+					<sup>4</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="album-covers"
+					class="tag-button"
+					title="album-covers" rel="3">
+					album-covers
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="brian-eno"
+					class="tag-button"
+					title="brian-eno" rel="3">
+					brian-eno
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="free-jazz"
+					class="tag-button"
+					title="free-jazz" rel="3">
+					free-jazz
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="guitar"
+					class="tag-button"
+					title="guitar" rel="3">
+					guitar
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="media"
+					class="tag-button"
+					title="media" rel="3">
+					media
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="new-york-city"
+					class="tag-button"
+					title="new-york-city" rel="3">
+					new-york-city
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="new-york-times"
+					class="tag-button"
+					title="new-york-times" rel="3">
+					new-york-times
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="nostalgia"
+					class="tag-button"
+					title="nostalgia" rel="3">
+					nostalgia
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="opinion"
+					class="tag-button"
+					title="opinion" rel="3">
+					opinion
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="san-francisco"
+					class="tag-button"
+					title="san-francisco" rel="3">
+					san-francisco
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="short-films"
+					class="tag-button"
+					title="short-films" rel="3">
+					short-films
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="travel"
+					class="tag-button"
+					title="travel" rel="3">
+					travel
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0167"
+					data-encode="video-art"
+					class="tag-button"
+					title="video-art" rel="3">
+					video-art
+					<sup>3</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="adam-yauch"
+					class="tag-button"
+					title="adam-yauch" rel="2">
+					adam-yauch
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="ambient"
+					class="tag-button"
+					title="ambient" rel="2">
+					ambient
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="architecture"
+					class="tag-button"
+					title="architecture" rel="2">
+					architecture
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="ari-up"
+					class="tag-button"
+					title="ari-up" rel="2">
+					ari-up
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="art-installations"
+					class="tag-button"
+					title="art-installations" rel="2">
+					art-installations
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="beastie-boys"
+					class="tag-button"
+					title="beastie-boys" rel="2">
+					beastie-boys
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="california"
+					class="tag-button"
+					title="california" rel="2">
+					california
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="china"
+					class="tag-button"
+					title="china" rel="2">
+					china
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="coffee"
+					class="tag-button"
+					title="coffee" rel="2">
+					coffee
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="documentary-films"
+					class="tag-button"
+					title="documentary-films" rel="2">
+					documentary-films
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="electronic-music"
+					class="tag-button"
+					title="electronic-music" rel="2">
+					electronic-music
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="facebook"
+					class="tag-button"
+					title="facebook" rel="2">
+					facebook
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="family"
+					class="tag-button"
+					title="family" rel="2">
+					family
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="folk"
+					class="tag-button"
+					title="folk" rel="2">
+					folk
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="hipsters"
+					class="tag-button"
+					title="hipsters" rel="2">
+					hipsters
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="images"
+					class="tag-button"
+					title="images" rel="2">
+					images
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="james-blake"
+					class="tag-button"
+					title="james-blake" rel="2">
+					james-blake
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="london"
+					class="tag-button"
+					title="london" rel="2">
+					london
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="lp-records"
+					class="tag-button"
+					title="lp-records" rel="2">
+					lp-records
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="mca"
+					class="tag-button"
+					title="mca" rel="2">
+					mca
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="modern-art"
+					class="tag-button"
+					title="modern-art" rel="2">
+					modern-art
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="montreal"
+					class="tag-button"
+					title="montreal" rel="2">
+					montreal
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="museum-of-modern-art"
+					class="tag-button"
+					title="museum-of-modern-art" rel="2">
+					museum-of-modern-art
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="music-diary-project"
+					class="tag-button"
+					title="music-diary-project" rel="2">
+					music-diary-project
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="nature"
+					class="tag-button"
+					title="nature" rel="2">
+					nature
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="oregon"
+					class="tag-button"
+					title="oregon" rel="2">
+					oregon
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="outer-space"
+					class="tag-button"
+					title="outer-space" rel="2">
+					outer-space
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="photos"
+					class="tag-button"
+					title="photos" rel="2">
+					photos
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="record-sleeves"
+					class="tag-button"
+					title="record-sleeves" rel="2">
+					record-sleeves
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="recording-industry"
+					class="tag-button"
+					title="recording-industry" rel="2">
+					recording-industry
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="science"
+					class="tag-button"
+					title="science" rel="2">
+					science
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="sculpture"
+					class="tag-button"
+					title="sculpture" rel="2">
+					sculpture
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="social-media"
+					class="tag-button"
+					title="social-media" rel="2">
+					social-media
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="sound"
+					class="tag-button"
+					title="sound" rel="2">
+					sound
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="steve-reich"
+					class="tag-button"
+					title="steve-reich" rel="2">
+					steve-reich
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="super-8-films"
+					class="tag-button"
+					title="super-8-films" rel="2">
+					super-8-films
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="telephones"
+					class="tag-button"
+					title="telephones" rel="2">
+					telephones
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="the-arkestra"
+					class="tag-button"
+					title="the-arkestra" rel="2">
+					the-arkestra
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="the-hilliard-ensemble"
+					class="tag-button"
+					title="the-hilliard-ensemble" rel="2">
+					the-hilliard-ensemble
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="the-wire"
+					class="tag-button"
+					title="the-wire" rel="2">
+					the-wire
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="typography"
+					class="tag-button"
+					title="typography" rel="2">
+					typography
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="urban-decay"
+					class="tag-button"
+					title="urban-decay" rel="2">
+					urban-decay
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="vampire-weekend"
+					class="tag-button"
+					title="vampire-weekend" rel="2">
+					vampire-weekend
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0168"
+					data-encode="vinyl"
+					class="tag-button"
+					title="vinyl" rel="2">
+					vinyl
+					<sup>2</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="1000-reasons-never-to-kiss-a-boy"
+					class="tag-button"
+					title="1000-reasons-never-to-kiss-a-boy" rel="1">
+					1000-reasons-never-to-kiss-a-boy
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="35-mm-film-projection"
+					class="tag-button"
+					title="35-mm-film-projection" rel="1">
+					35-mm-film-projection
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="433"
+					class="tag-button"
+					title="433" rel="1">
+					433
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="78-rpm-records"
+					class="tag-button"
+					title="78-rpm-records" rel="1">
+					78-rpm-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="Meta"
+					class="tag-button"
+					title="Meta" rel="1">
+					Meta
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="a-joyful-noise"
+					class="tag-button"
+					title="a-joyful-noise" rel="1">
+					a-joyful-noise
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="abandoned-structures"
+					class="tag-button"
+					title="abandoned-structures" rel="1">
+					abandoned-structures
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="acoustic-guitar"
+					class="tag-button"
+					title="acoustic-guitar" rel="1">
+					acoustic-guitar
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="actress"
+					class="tag-button"
+					title="actress" rel="1">
+					actress
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="africa"
+					class="tag-button"
+					title="africa" rel="1">
+					africa
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ahae"
+					class="tag-button"
+					title="ahae" rel="1">
+					ahae
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="amen-break"
+					class="tag-button"
+					title="amen-break" rel="1">
+					amen-break
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="american-bandstand"
+					class="tag-button"
+					title="american-bandstand" rel="1">
+					american-bandstand
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="american-folk"
+					class="tag-button"
+					title="american-folk" rel="1">
+					american-folk
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="amusement-parks"
+					class="tag-button"
+					title="amusement-parks" rel="1">
+					amusement-parks
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="aquarius-records"
+					class="tag-button"
+					title="aquarius-records" rel="1">
+					aquarius-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="arcade-games"
+					class="tag-button"
+					title="arcade-games" rel="1">
+					arcade-games
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="arhoolie-records"
+					class="tag-button"
+					title="arhoolie-records" rel="1">
+					arhoolie-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="arson"
+					class="tag-button"
+					title="arson" rel="1">
+					arson
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="art-museums"
+					class="tag-button"
+					title="art-museums" rel="1">
+					art-museums
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="au-revoir-simone"
+					class="tag-button"
+					title="au-revoir-simone" rel="1">
+					au-revoir-simone
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="audio"
+					class="tag-button"
+					title="audio" rel="1">
+					audio
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="auto-tune"
+					class="tag-button"
+					title="auto-tune" rel="1">
+					auto-tune
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="band-names"
+					class="tag-button"
+					title="band-names" rel="1">
+					band-names
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="banjo"
+					class="tag-button"
+					title="banjo" rel="1">
+					banjo
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bbc-television"
+					class="tag-button"
+					title="bbc-television" rel="1">
+					bbc-television
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="beer"
+					class="tag-button"
+					title="beer" rel="1">
+					beer
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="being-boring"
+					class="tag-button"
+					title="being-boring" rel="1">
+					being-boring
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="being-busy"
+					class="tag-button"
+					title="being-busy" rel="1">
+					being-busy
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="belbury-poly"
+					class="tag-button"
+					title="belbury-poly" rel="1">
+					belbury-poly
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bert-jansch"
+					class="tag-button"
+					title="bert-jansch" rel="1">
+					bert-jansch
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="best-of-list"
+					class="tag-button"
+					title="best-of-list" rel="1">
+					best-of-list
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bibio"
+					class="tag-button"
+					title="bibio" rel="1">
+					bibio
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bill-boggs"
+					class="tag-button"
+					title="bill-boggs" rel="1">
+					bill-boggs
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bill-monroe"
+					class="tag-button"
+					title="bill-monroe" rel="1">
+					bill-monroe
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bill-orcutt"
+					class="tag-button"
+					title="bill-orcutt" rel="1">
+					bill-orcutt
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="billie-holiday"
+					class="tag-button"
+					title="billie-holiday" rel="1">
+					billie-holiday
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="biological-lumination"
+					class="tag-button"
+					title="biological-lumination" rel="1">
+					biological-lumination
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bluegrass"
+					class="tag-button"
+					title="bluegrass" rel="1">
+					bluegrass
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="blues"
+					class="tag-button"
+					title="blues" rel="1">
+					blues
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="blurred"
+					class="tag-button"
+					title="blurred" rel="1">
+					blurred
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bokeh"
+					class="tag-button"
+					title="bokeh" rel="1">
+					bokeh
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bon-iver"
+					class="tag-button"
+					title="bon-iver" rel="1">
+					bon-iver
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="books"
+					class="tag-button"
+					title="books" rel="1">
+					books
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="brian-wilson"
+					class="tag-button"
+					title="brian-wilson" rel="1">
+					brian-wilson
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bridget-riley"
+					class="tag-button"
+					title="bridget-riley" rel="1">
+					bridget-riley
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="british-folk"
+					class="tag-button"
+					title="british-folk" rel="1">
+					british-folk
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="broadcast"
+					class="tag-button"
+					title="broadcast" rel="1">
+					broadcast
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="brother-from-another-planet"
+					class="tag-button"
+					title="brother-from-another-planet" rel="1">
+					brother-from-another-planet
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="buckminster-fuller"
+					class="tag-button"
+					title="buckminster-fuller" rel="1">
+					buckminster-fuller
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="bugs-bunny"
+					class="tag-button"
+					title="bugs-bunny" rel="1">
+					bugs-bunny
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="c86"
+					class="tag-button"
+					title="c86" rel="1">
+					c86
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="califone"
+					class="tag-button"
+					title="califone" rel="1">
+					califone
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="cameo"
+					class="tag-button"
+					title="cameo" rel="1">
+					cameo
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="captain-beefheart"
+					class="tag-button"
+					title="captain-beefheart" rel="1">
+					captain-beefheart
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="cat-adoption"
+					class="tag-button"
+					title="cat-adoption" rel="1">
+					cat-adoption
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="cats"
+					class="tag-button"
+					title="cats" rel="1">
+					cats
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="central-washington-state"
+					class="tag-button"
+					title="central-washington-state" rel="1">
+					central-washington-state
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="change"
+					class="tag-button"
+					title="change" rel="1">
+					change
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="charles-gayle"
+					class="tag-button"
+					title="charles-gayle" rel="1">
+					charles-gayle
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="charles-ray-eames"
+					class="tag-button"
+					title="charles-ray-eames" rel="1">
+					charles-ray-eames
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="chess-blues"
+					class="tag-button"
+					title="chess-blues" rel="1">
+					chess-blues
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="childrens-literature"
+					class="tag-button"
+					title="childrens-literature" rel="1">
+					childrens-literature
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="choral-performance"
+					class="tag-button"
+					title="choral-performance" rel="1">
+					choral-performance
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="christina-kubisch"
+					class="tag-button"
+					title="christina-kubisch" rel="1">
+					christina-kubisch
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="christoph-meier"
+					class="tag-button"
+					title="christoph-meier" rel="1">
+					christoph-meier
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="chuck-jones"
+					class="tag-button"
+					title="chuck-jones" rel="1">
+					chuck-jones
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="chuck-person"
+					class="tag-button"
+					title="chuck-person" rel="1">
+					chuck-person
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="coil"
+					class="tag-button"
+					title="coil" rel="1">
+					coil
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="coming-out"
+					class="tag-button"
+					title="coming-out" rel="1">
+					coming-out
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="community-art-projects"
+					class="tag-button"
+					title="community-art-projects" rel="1">
+					community-art-projects
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="composite-sketches"
+					class="tag-button"
+					title="composite-sketches" rel="1">
+					composite-sketches
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="computer-generated-art"
+					class="tag-button"
+					title="computer-generated-art" rel="1">
+					computer-generated-art
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="comus"
+					class="tag-button"
+					title="comus" rel="1">
+					comus
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="country-music"
+					class="tag-button"
+					title="country-music" rel="1">
+					country-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="curated-art"
+					class="tag-button"
+					title="curated-art" rel="1">
+					curated-art
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dark-side-of-the-moon"
+					class="tag-button"
+					title="dark-side-of-the-moon" rel="1">
+					dark-side-of-the-moon
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="darkstar"
+					class="tag-button"
+					title="darkstar" rel="1">
+					darkstar
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="deceased-musicians"
+					class="tag-button"
+					title="deceased-musicians" rel="1">
+					deceased-musicians
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="democratic-republic-of-congo"
+					class="tag-button"
+					title="democratic-republic-of-congo" rel="1">
+					democratic-republic-of-congo
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dial-a-poem"
+					class="tag-button"
+					title="dial-a-poem" rel="1">
+					dial-a-poem
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dick-clark"
+					class="tag-button"
+					title="dick-clark" rel="1">
+					dick-clark
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="diddy-wah-diddy"
+					class="tag-button"
+					title="diddy-wah-diddy" rel="1">
+					diddy-wah-diddy
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="discord-records"
+					class="tag-button"
+					title="discord-records" rel="1">
+					discord-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dj-mixes"
+					class="tag-button"
+					title="dj-mixes" rel="1">
+					dj-mixes
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="doc-watson"
+					class="tag-button"
+					title="doc-watson" rel="1">
+					doc-watson
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="documentary"
+					class="tag-button"
+					title="documentary" rel="1">
+					documentary
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dogs"
+					class="tag-button"
+					title="dogs" rel="1">
+					dogs
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dogs-in-cars"
+					class="tag-button"
+					title="dogs-in-cars" rel="1">
+					dogs-in-cars
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="donnie-joe-emerson"
+					class="tag-button"
+					title="donnie-joe-emerson" rel="1">
+					donnie-joe-emerson
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="douglas-coupland"
+					class="tag-button"
+					title="douglas-coupland" rel="1">
+					douglas-coupland
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="drc-music"
+					class="tag-button"
+					title="drc-music" rel="1">
+					drc-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="drinkify"
+					class="tag-button"
+					title="drinkify" rel="1">
+					drinkify
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="drinking"
+					class="tag-button"
+					title="drinking" rel="1">
+					drinking
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="drum-breaks"
+					class="tag-button"
+					title="drum-breaks" rel="1">
+					drum-breaks
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="drumnbass"
+					class="tag-button"
+					title="drumnbass" rel="1">
+					drumnbass
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dubstep"
+					class="tag-button"
+					title="dubstep" rel="1">
+					dubstep
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dustin-wong"
+					class="tag-button"
+					title="dustin-wong" rel="1">
+					dustin-wong
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="dynamite"
+					class="tag-button"
+					title="dynamite" rel="1">
+					dynamite
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="early-20th-century-sound-recordings"
+					class="tag-button"
+					title="early-20th-century-sound-recordings" rel="1">
+					early-20th-century-sound-recordings
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="early-music"
+					class="tag-button"
+					title="early-music" rel="1">
+					early-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ecm-records"
+					class="tag-button"
+					title="ecm-records" rel="1">
+					ecm-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="editorial"
+					class="tag-button"
+					title="editorial" rel="1">
+					editorial
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="educational-films"
+					class="tag-button"
+					title="educational-films" rel="1">
+					educational-films
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="engine-idle"
+					class="tag-button"
+					title="engine-idle" rel="1">
+					engine-idle
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ernest-borgnine"
+					class="tag-button"
+					title="ernest-borgnine" rel="1">
+					ernest-borgnine
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="erock"
+					class="tag-button"
+					title="erock" rel="1">
+					erock
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="erotic-stories"
+					class="tag-button"
+					title="erotic-stories" rel="1">
+					erotic-stories
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ethics"
+					class="tag-button"
+					title="ethics" rel="1">
+					ethics
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ethnic-music"
+					class="tag-button"
+					title="ethnic-music" rel="1">
+					ethnic-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="experimental-film"
+					class="tag-button"
+					title="experimental-film" rel="1">
+					experimental-film
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="factory-records"
+					class="tag-button"
+					title="factory-records" rel="1">
+					factory-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="family-entertainment"
+					class="tag-button"
+					title="family-entertainment" rel="1">
+					family-entertainment
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="fandom"
+					class="tag-button"
+					title="fandom" rel="1">
+					fandom
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="favorites-of-2012"
+					class="tag-button"
+					title="favorites-of-2012" rel="1">
+					favorites-of-2012
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="fedge"
+					class="tag-button"
+					title="fedge" rel="1">
+					fedge
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="field-recordings"
+					class="tag-button"
+					title="field-recordings" rel="1">
+					field-recordings
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="file-sharing"
+					class="tag-button"
+					title="file-sharing" rel="1">
+					file-sharing
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="filiamotsa"
+					class="tag-button"
+					title="filiamotsa" rel="1">
+					filiamotsa
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="finders-keepers"
+					class="tag-button"
+					title="finders-keepers" rel="1">
+					finders-keepers
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="finland"
+					class="tag-button"
+					title="finland" rel="1">
+					finland
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="flash-mobs"
+					class="tag-button"
+					title="flash-mobs" rel="1">
+					flash-mobs
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="flatt-scruggs"
+					class="tag-button"
+					title="flatt-scruggs" rel="1">
+					flatt-scruggs
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="flieflies"
+					class="tag-button"
+					title="flieflies" rel="1">
+					flieflies
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="foggy-mountain-boys"
+					class="tag-button"
+					title="foggy-mountain-boys" rel="1">
+					foggy-mountain-boys
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="folk-music"
+					class="tag-button"
+					title="folk-music" rel="1">
+					folk-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="fonts"
+					class="tag-button"
+					title="fonts" rel="1">
+					fonts
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="food"
+					class="tag-button"
+					title="food" rel="1">
+					food
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ford-lopatin"
+					class="tag-button"
+					title="ford-lopatin" rel="1">
+					ford-lopatin
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="fourth-uncle"
+					class="tag-button"
+					title="fourth-uncle" rel="1">
+					fourth-uncle
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="francis-scott-key"
+					class="tag-button"
+					title="francis-scott-key" rel="1">
+					francis-scott-key
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="frank-ocean"
+					class="tag-button"
+					title="frank-ocean" rel="1">
+					frank-ocean
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="freitag-products"
+					class="tag-button"
+					title="freitag-products" rel="1">
+					freitag-products
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="french-film"
+					class="tag-button"
+					title="french-film" rel="1">
+					french-film
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="fugazi"
+					class="tag-button"
+					title="fugazi" rel="1">
+					fugazi
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="funky-soul"
+					class="tag-button"
+					title="funky-soul" rel="1">
+					funky-soul
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="future-cities"
+					class="tag-button"
+					title="future-cities" rel="1">
+					future-cities
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="fuzzy-friends"
+					class="tag-button"
+					title="fuzzy-friends" rel="1">
+					fuzzy-friends
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="games"
+					class="tag-button"
+					title="games" rel="1">
+					games
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="george-washington"
+					class="tag-button"
+					title="george-washington" rel="1">
+					george-washington
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="georgia"
+					class="tag-button"
+					title="georgia" rel="1">
+					georgia
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="germany"
+					class="tag-button"
+					title="germany" rel="1">
+					germany
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ghost-box"
+					class="tag-button"
+					title="ghost-box" rel="1">
+					ghost-box
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="glass-skulls"
+					class="tag-button"
+					title="glass-skulls" rel="1">
+					glass-skulls
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="good-morning"
+					class="tag-button"
+					title="good-morning" rel="1">
+					good-morning
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="goodbyes"
+					class="tag-button"
+					title="goodbyes" rel="1">
+					goodbyes
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="google-doodle"
+					class="tag-button"
+					title="google-doodle" rel="1">
+					google-doodle
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="google-maps"
+					class="tag-button"
+					title="google-maps" rel="1">
+					google-maps
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="google-street-view"
+					class="tag-button"
+					title="google-street-view" rel="1">
+					google-street-view
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="guided-by-voices"
+					class="tag-button"
+					title="guided-by-voices" rel="1">
+					guided-by-voices
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="happiness"
+					class="tag-button"
+					title="happiness" rel="1">
+					happiness
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="happy-halloween"
+					class="tag-button"
+					title="happy-halloween" rel="1">
+					happy-halloween
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="happy-holidays"
+					class="tag-button"
+					title="happy-holidays" rel="1">
+					happy-holidays
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="harmonic-motion"
+					class="tag-button"
+					title="harmonic-motion" rel="1">
+					harmonic-motion
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="harry-pussy"
+					class="tag-button"
+					title="harry-pussy" rel="1">
+					harry-pussy
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="high-speed-rail"
+					class="tag-button"
+					title="high-speed-rail" rel="1">
+					high-speed-rail
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="hilton-head"
+					class="tag-button"
+					title="hilton-head" rel="1">
+					hilton-head
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="hip-hop"
+					class="tag-button"
+					title="hip-hop" rel="1">
+					hip-hop
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="hipgnosis"
+					class="tag-button"
+					title="hipgnosis" rel="1">
+					hipgnosis
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="hirise-orbiter"
+					class="tag-button"
+					title="hirise-orbiter" rel="1">
+					hirise-orbiter
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="history-of-music"
+					class="tag-button"
+					title="history-of-music" rel="1">
+					history-of-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="hit-singles"
+					class="tag-button"
+					title="hit-singles" rel="1">
+					hit-singles
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="holy-trinity-of-bluegrass"
+					class="tag-button"
+					title="holy-trinity-of-bluegrass" rel="1">
+					holy-trinity-of-bluegrass
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="home-recording"
+					class="tag-button"
+					title="home-recording" rel="1">
+					home-recording
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="home-video"
+					class="tag-button"
+					title="home-video" rel="1">
+					home-video
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="illustration"
+					class="tag-button"
+					title="illustration" rel="1">
+					illustration
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="independent-record-labels"
+					class="tag-button"
+					title="independent-record-labels" rel="1">
+					independent-record-labels
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="indian-records"
+					class="tag-button"
+					title="indian-records" rel="1">
+					indian-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="insects"
+					class="tag-button"
+					title="insects" rel="1">
+					insects
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="interviews"
+					class="tag-button"
+					title="interviews" rel="1">
+					interviews
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="intro-design-company"
+					class="tag-button"
+					title="intro-design-company" rel="1">
+					intro-design-company
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="italy"
+					class="tag-button"
+					title="italy" rel="1">
+					italy
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="jamaican-gospel"
+					class="tag-button"
+					title="jamaican-gospel" rel="1">
+					jamaican-gospel
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="jamake-highwater"
+					class="tag-button"
+					title="jamake-highwater" rel="1">
+					jamake-highwater
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="james-bond-movies"
+					class="tag-button"
+					title="james-bond-movies" rel="1">
+					james-bond-movies
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="jan-garbarek"
+					class="tag-button"
+					title="jan-garbarek" rel="1">
+					jan-garbarek
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="jeff"
+					class="tag-button"
+					title="jeff" rel="1">
+					jeff
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="jim-henson"
+					class="tag-button"
+					title="jim-henson" rel="1">
+					jim-henson
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="joe-meek"
+					class="tag-button"
+					title="joe-meek" rel="1">
+					joe-meek
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="johannes-ockeghem"
+					class="tag-button"
+					title="johannes-ockeghem" rel="1">
+					johannes-ockeghem
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="john-cage"
+					class="tag-button"
+					title="john-cage" rel="1">
+					john-cage
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="jon-rafman"
+					class="tag-button"
+					title="jon-rafman" rel="1">
+					jon-rafman
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="josephine"
+					class="tag-button"
+					title="josephine" rel="1">
+					josephine
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="joy-division"
+					class="tag-button"
+					title="joy-division" rel="1">
+					joy-division
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="judy-garland"
+					class="tag-button"
+					title="judy-garland" rel="1">
+					judy-garland
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="julian-house"
+					class="tag-button"
+					title="julian-house" rel="1">
+					julian-house
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="july-4th"
+					class="tag-button"
+					title="july-4th" rel="1">
+					july-4th
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="kaboom"
+					class="tag-button"
+					title="kaboom" rel="1">
+					kaboom
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="kanye-west"
+					class="tag-button"
+					title="kanye-west" rel="1">
+					kanye-west
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="kenneth-goldsmith"
+					class="tag-button"
+					title="kenneth-goldsmith" rel="1">
+					kenneth-goldsmith
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="kids"
+					class="tag-button"
+					title="kids" rel="1">
+					kids
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="kinetic-art"
+					class="tag-button"
+					title="kinetic-art" rel="1">
+					kinetic-art
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="kittens"
+					class="tag-button"
+					title="kittens" rel="1">
+					kittens
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="kranky"
+					class="tag-button"
+					title="kranky" rel="1">
+					kranky
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="language"
+					class="tag-button"
+					title="language" rel="1">
+					language
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="law-enforcement"
+					class="tag-button"
+					title="law-enforcement" rel="1">
+					law-enforcement
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="lcd-soundsystem"
+					class="tag-button"
+					title="lcd-soundsystem" rel="1">
+					lcd-soundsystem
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="learning"
+					class="tag-button"
+					title="learning" rel="1">
+					learning
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="library-music"
+					class="tag-button"
+					title="library-music" rel="1">
+					library-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="life"
+					class="tag-button"
+					title="life" rel="1">
+					life
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="literary-characters"
+					class="tag-button"
+					title="literary-characters" rel="1">
+					literary-characters
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="lithography"
+					class="tag-button"
+					title="lithography" rel="1">
+					lithography
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="liu-bolin"
+					class="tag-button"
+					title="liu-bolin" rel="1">
+					liu-bolin
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="live-music"
+					class="tag-button"
+					title="live-music" rel="1">
+					live-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="live-performances"
+					class="tag-button"
+					title="live-performances" rel="1">
+					live-performances
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="lo-fi"
+					class="tag-button"
+					title="lo-fi" rel="1">
+					lo-fi
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="logos"
+					class="tag-button"
+					title="logos" rel="1">
+					logos
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="long-lost-recordings"
+					class="tag-button"
+					title="long-lost-recordings" rel="1">
+					long-lost-recordings
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="looney-tunes"
+					class="tag-button"
+					title="looney-tunes" rel="1">
+					looney-tunes
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="lorchestre-national-de-jazz"
+					class="tag-button"
+					title="lorchestre-national-de-jazz" rel="1">
+					lorchestre-national-de-jazz
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="love"
+					class="tag-button"
+					title="love" rel="1">
+					love
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="luk-thung"
+					class="tag-button"
+					title="luk-thung" rel="1">
+					luk-thung
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="lullaby"
+					class="tag-button"
+					title="lullaby" rel="1">
+					lullaby
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="magnetic-resonance-imaging"
+					class="tag-button"
+					title="magnetic-resonance-imaging" rel="1">
+					magnetic-resonance-imaging
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="marion-brown"
+					class="tag-button"
+					title="marion-brown" rel="1">
+					marion-brown
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="marisa-anderson"
+					class="tag-button"
+					title="marisa-anderson" rel="1">
+					marisa-anderson
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="mars"
+					class="tag-button"
+					title="mars" rel="1">
+					mars
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="martha-freeman"
+					class="tag-button"
+					title="martha-freeman" rel="1">
+					martha-freeman
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="matador-records"
+					class="tag-button"
+					title="matador-records" rel="1">
+					matador-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="mathematics"
+					class="tag-button"
+					title="mathematics" rel="1">
+					mathematics
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="maximum-axial-tilt"
+					class="tag-button"
+					title="maximum-axial-tilt" rel="1">
+					maximum-axial-tilt
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="merrie-melodies"
+					class="tag-button"
+					title="merrie-melodies" rel="1">
+					merrie-melodies
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="midnight-in-the-garden-of-good-and-evil"
+					class="tag-button"
+					title="midnight-in-the-garden-of-good-and-evil" rel="1">
+					midnight-in-the-garden-of-good-and-evil
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="minimalism"
+					class="tag-button"
+					title="minimalism" rel="1">
+					minimalism
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="mississippi-records"
+					class="tag-button"
+					title="mississippi-records" rel="1">
+					mississippi-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="mister-rogers"
+					class="tag-button"
+					title="mister-rogers" rel="1">
+					mister-rogers
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="modern-classical"
+					class="tag-button"
+					title="modern-classical" rel="1">
+					modern-classical
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="modern-composition"
+					class="tag-button"
+					title="modern-composition" rel="1">
+					modern-composition
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="moog-synthesizer"
+					class="tag-button"
+					title="moog-synthesizer" rel="1">
+					moog-synthesizer
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="mount-kimbie"
+					class="tag-button"
+					title="mount-kimbie" rel="1">
+					mount-kimbie
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="movie-soundtracks"
+					class="tag-button"
+					title="movie-soundtracks" rel="1">
+					movie-soundtracks
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="murals"
+					class="tag-button"
+					title="murals" rel="1">
+					murals
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="music-composition"
+					class="tag-button"
+					title="music-composition" rel="1">
+					music-composition
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="music-journalism"
+					class="tag-button"
+					title="music-journalism" rel="1">
+					music-journalism
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="music-recording"
+					class="tag-button"
+					title="music-recording" rel="1">
+					music-recording
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="music-video"
+					class="tag-button"
+					title="music-video" rel="1">
+					music-video
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="music-videos"
+					class="tag-button"
+					title="music-videos" rel="1">
+					music-videos
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="musique-concrete"
+					class="tag-button"
+					title="musique-concrete" rel="1">
+					musique-concrete
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="napoleon-bonaparte"
+					class="tag-button"
+					title="napoleon-bonaparte" rel="1">
+					napoleon-bonaparte
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="nashville"
+					class="tag-button"
+					title="nashville" rel="1">
+					nashville
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="nathaniel-hornblower"
+					class="tag-button"
+					title="nathaniel-hornblower" rel="1">
+					nathaniel-hornblower
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="native-american-music"
+					class="tag-button"
+					title="native-american-music" rel="1">
+					native-american-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="neon-indian"
+					class="tag-button"
+					title="neon-indian" rel="1">
+					neon-indian
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="news"
+					class="tag-button"
+					title="news" rel="1">
+					news
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="nicolas-cage"
+					class="tag-button"
+					title="nicolas-cage" rel="1">
+					nicolas-cage
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ninja-tune"
+					class="tag-button"
+					title="ninja-tune" rel="1">
+					ninja-tune
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="nme"
+					class="tag-button"
+					title="nme" rel="1">
+					nme
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="noise"
+					class="tag-button"
+					title="noise" rel="1">
+					noise
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="nonesuch-records"
+					class="tag-button"
+					title="nonesuch-records" rel="1">
+					nonesuch-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="nutella"
+					class="tag-button"
+					title="nutella" rel="1">
+					nutella
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="obituaries"
+					class="tag-button"
+					title="obituaries" rel="1">
+					obituaries
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="occupy-wall-street"
+					class="tag-button"
+					title="occupy-wall-street" rel="1">
+					occupy-wall-street
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="odd-future"
+					class="tag-button"
+					title="odd-future" rel="1">
+					odd-future
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="oneohtrix-point-never"
+					class="tag-button"
+					title="oneohtrix-point-never" rel="1">
+					oneohtrix-point-never
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="online-culture"
+					class="tag-button"
+					title="online-culture" rel="1">
+					online-culture
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="optical-art"
+					class="tag-button"
+					title="optical-art" rel="1">
+					optical-art
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="out-of-the-unknown"
+					class="tag-button"
+					title="out-of-the-unknown" rel="1">
+					out-of-the-unknown
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="overheard-conversations"
+					class="tag-button"
+					title="overheard-conversations" rel="1">
+					overheard-conversations
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="packaging"
+					class="tag-button"
+					title="packaging" rel="1">
+					packaging
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pagan"
+					class="tag-button"
+					title="pagan" rel="1">
+					pagan
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="paint"
+					class="tag-button"
+					title="paint" rel="1">
+					paint
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="paul-clipson"
+					class="tag-button"
+					title="paul-clipson" rel="1">
+					paul-clipson
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pavement"
+					class="tag-button"
+					title="pavement" rel="1">
+					pavement
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pavillion"
+					class="tag-button"
+					title="pavillion" rel="1">
+					pavillion
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pbs"
+					class="tag-button"
+					title="pbs" rel="1">
+					pbs
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pentangle"
+					class="tag-button"
+					title="pentangle" rel="1">
+					pentangle
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pep-talks"
+					class="tag-button"
+					title="pep-talks" rel="1">
+					pep-talks
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="performance-art"
+					class="tag-button"
+					title="performance-art" rel="1">
+					performance-art
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="peter-christopherson"
+					class="tag-button"
+					title="peter-christopherson" rel="1">
+					peter-christopherson
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="peter-saville"
+					class="tag-button"
+					title="peter-saville" rel="1">
+					peter-saville
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="philadelphia"
+					class="tag-button"
+					title="philadelphia" rel="1">
+					philadelphia
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="philadelphia-mural-arts-project"
+					class="tag-button"
+					title="philadelphia-mural-arts-project" rel="1">
+					philadelphia-mural-arts-project
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="philip-jeck"
+					class="tag-button"
+					title="philip-jeck" rel="1">
+					philip-jeck
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="phonographs"
+					class="tag-button"
+					title="phonographs" rel="1">
+					phonographs
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="photo-diary"
+					class="tag-button"
+					title="photo-diary" rel="1">
+					photo-diary
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="physics"
+					class="tag-button"
+					title="physics" rel="1">
+					physics
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pierre-henry"
+					class="tag-button"
+					title="pierre-henry" rel="1">
+					pierre-henry
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pink-floyd"
+					class="tag-button"
+					title="pink-floyd" rel="1">
+					pink-floyd
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="plywood"
+					class="tag-button"
+					title="plywood" rel="1">
+					plywood
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="poetry"
+					class="tag-button"
+					title="poetry" rel="1">
+					poetry
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="poly-styrene"
+					class="tag-button"
+					title="poly-styrene" rel="1">
+					poly-styrene
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pop"
+					class="tag-button"
+					title="pop" rel="1">
+					pop
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="posters"
+					class="tag-button"
+					title="posters" rel="1">
+					posters
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="psychedelic-film"
+					class="tag-button"
+					title="psychedelic-film" rel="1">
+					psychedelic-film
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="public-service-announcements"
+					class="tag-button"
+					title="public-service-announcements" rel="1">
+					public-service-announcements
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pulsars"
+					class="tag-button"
+					title="pulsars" rel="1">
+					pulsars
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="pulse-emitter"
+					class="tag-button"
+					title="pulse-emitter" rel="1">
+					pulse-emitter
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="punk"
+					class="tag-button"
+					title="punk" rel="1">
+					punk
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="puppies"
+					class="tag-button"
+					title="puppies" rel="1">
+					puppies
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="queensland-gallery-of-modern-art"
+					class="tag-button"
+					title="queensland-gallery-of-modern-art" rel="1">
+					queensland-gallery-of-modern-art
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="r-stevie-moore"
+					class="tag-button"
+					title="r-stevie-moore" rel="1">
+					r-stevie-moore
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="raul-midon"
+					class="tag-button"
+					title="raul-midon" rel="1">
+					raul-midon
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="raymond-scott"
+					class="tag-button"
+					title="raymond-scott" rel="1">
+					raymond-scott
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="record-labels"
+					class="tag-button"
+					title="record-labels" rel="1">
+					record-labels
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="records"
+					class="tag-button"
+					title="records" rel="1">
+					records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="recycled-products"
+					class="tag-button"
+					title="recycled-products" rel="1">
+					recycled-products
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="remix"
+					class="tag-button"
+					title="remix" rel="1">
+					remix
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="remixed"
+					class="tag-button"
+					title="remixed" rel="1">
+					remixed
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="richard-bishop"
+					class="tag-button"
+					title="richard-bishop" rel="1">
+					richard-bishop
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="riots"
+					class="tag-button"
+					title="riots" rel="1">
+					riots
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ritual-music"
+					class="tag-button"
+					title="ritual-music" rel="1">
+					ritual-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="road-trips"
+					class="tag-button"
+					title="road-trips" rel="1">
+					road-trips
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="robert-moog"
+					class="tag-button"
+					title="robert-moog" rel="1">
+					robert-moog
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="rockabilly"
+					class="tag-button"
+					title="rockabilly" rel="1">
+					rockabilly
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="root-blog"
+					class="tag-button"
+					title="root-blog" rel="1">
+					root-blog
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="root-strata"
+					class="tag-button"
+					title="root-strata" rel="1">
+					root-strata
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="roulette"
+					class="tag-button"
+					title="roulette" rel="1">
+					roulette
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="running"
+					class="tag-button"
+					title="running" rel="1">
+					running
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ruth-awasa"
+					class="tag-button"
+					title="ruth-awasa" rel="1">
+					ruth-awasa
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sam-prekop"
+					class="tag-button"
+					title="sam-prekop" rel="1">
+					sam-prekop
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sampling"
+					class="tag-button"
+					title="sampling" rel="1">
+					sampling
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sarah-records"
+					class="tag-button"
+					title="sarah-records" rel="1">
+					sarah-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="savannah"
+					class="tag-button"
+					title="savannah" rel="1">
+					savannah
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="saxophone"
+					class="tag-button"
+					title="saxophone" rel="1">
+					saxophone
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="scented-candles"
+					class="tag-button"
+					title="scented-candles" rel="1">
+					scented-candles
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="scruggs-style"
+					class="tag-button"
+					title="scruggs-style" rel="1">
+					scruggs-style
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="seasons"
+					class="tag-button"
+					title="seasons" rel="1">
+					seasons
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="seu-jorge-almaz"
+					class="tag-button"
+					title="seu-jorge-almaz" rel="1">
+					seu-jorge-almaz
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sexual-attraction"
+					class="tag-button"
+					title="sexual-attraction" rel="1">
+					sexual-attraction
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sharon-jones-the-dapkings"
+					class="tag-button"
+					title="sharon-jones-the-dapkings" rel="1">
+					sharon-jones-the-dapkings
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="shellac"
+					class="tag-button"
+					title="shellac" rel="1">
+					shellac
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="skee-ball"
+					class="tag-button"
+					title="skee-ball" rel="1">
+					skee-ball
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sleeves-received"
+					class="tag-button"
+					title="sleeves-received" rel="1">
+					sleeves-received
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="snow"
+					class="tag-button"
+					title="snow" rel="1">
+					snow
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="social-music"
+					class="tag-button"
+					title="social-music" rel="1">
+					social-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="society"
+					class="tag-button"
+					title="society" rel="1">
+					society
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="song-of-the-week"
+					class="tag-button"
+					title="song-of-the-week" rel="1">
+					song-of-the-week
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="songwriting"
+					class="tag-button"
+					title="songwriting" rel="1">
+					songwriting
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="soul"
+					class="tag-button"
+					title="soul" rel="1">
+					soul
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sound-installations"
+					class="tag-button"
+					title="sound-installations" rel="1">
+					sound-installations
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sound-manipulation"
+					class="tag-button"
+					title="sound-manipulation" rel="1">
+					sound-manipulation
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="south-carolina"
+					class="tag-button"
+					title="south-carolina" rel="1">
+					south-carolina
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="south-korea"
+					class="tag-button"
+					title="south-korea" rel="1">
+					south-korea
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="space-is-the-place"
+					class="tag-button"
+					title="space-is-the-place" rel="1">
+					space-is-the-place
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="spanish-moss"
+					class="tag-button"
+					title="spanish-moss" rel="1">
+					spanish-moss
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sparklers"
+					class="tag-button"
+					title="sparklers" rel="1">
+					sparklers
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="spoken-word"
+					class="tag-button"
+					title="spoken-word" rel="1">
+					spoken-word
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="spoon"
+					class="tag-button"
+					title="spoon" rel="1">
+					spoon
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="spring-break"
+					class="tag-button"
+					title="spring-break" rel="1">
+					spring-break
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="stairs"
+					class="tag-button"
+					title="stairs" rel="1">
+					stairs
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="stanford-center-for-cognitive-and-neurobiological-imaging"
+					class="tag-button"
+					title="stanford-center-for-cognitive-and-neurobiological-imaging" rel="1">
+					stanford-center-for-cognitive-and-neurobiological-imaging
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="star-trek"
+					class="tag-button"
+					title="star-trek" rel="1">
+					star-trek
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="star-wars"
+					class="tag-button"
+					title="star-wars" rel="1">
+					star-wars
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="station-identification-segments"
+					class="tag-button"
+					title="station-identification-segments" rel="1">
+					station-identification-segments
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="stax"
+					class="tag-button"
+					title="stax" rel="1">
+					stax
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sticker-art"
+					class="tag-button"
+					title="sticker-art" rel="1">
+					sticker-art
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="stopping-off-place"
+					class="tag-button"
+					title="stopping-off-place" rel="1">
+					stopping-off-place
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="street-busking"
+					class="tag-button"
+					title="street-busking" rel="1">
+					street-busking
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="streets-the-clown"
+					class="tag-button"
+					title="streets-the-clown" rel="1">
+					streets-the-clown
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="string-music"
+					class="tag-button"
+					title="string-music" rel="1">
+					string-music
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="subway"
+					class="tag-button"
+					title="subway" rel="1">
+					subway
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="summer"
+					class="tag-button"
+					title="summer" rel="1">
+					summer
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="summer-solstice"
+					class="tag-button"
+					title="summer-solstice" rel="1">
+					summer-solstice
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sun-araw"
+					class="tag-button"
+					title="sun-araw" rel="1">
+					sun-araw
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="sun-city-girls"
+					class="tag-button"
+					title="sun-city-girls" rel="1">
+					sun-city-girls
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="suoni-per-il-popolo"
+					class="tag-button"
+					title="suoni-per-il-popolo" rel="1">
+					suoni-per-il-popolo
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="symphony-of-science"
+					class="tag-button"
+					title="symphony-of-science" rel="1">
+					symphony-of-science
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="synchronicity"
+					class="tag-button"
+					title="synchronicity" rel="1">
+					synchronicity
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="tape-manipulation"
+					class="tag-button"
+					title="tape-manipulation" rel="1">
+					tape-manipulation
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="technology"
+					class="tag-button"
+					title="technology" rel="1">
+					technology
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="television"
+					class="tag-button"
+					title="television" rel="1">
+					television
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="telstar"
+					class="tag-button"
+					title="telstar" rel="1">
+					telstar
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="tennessee"
+					class="tag-button"
+					title="tennessee" rel="1">
+					tennessee
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="thailand"
+					class="tag-button"
+					title="thailand" rel="1">
+					thailand
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="thank-you"
+					class="tag-button"
+					title="thank-you" rel="1">
+					thank-you
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="thanksgiving"
+					class="tag-button"
+					title="thanksgiving" rel="1">
+					thanksgiving
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-barnes-foundation"
+					class="tag-button"
+					title="the-barnes-foundation" rel="1">
+					the-barnes-foundation
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-bats"
+					class="tag-button"
+					title="the-bats" rel="1">
+					the-bats
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-beach-boys"
+					class="tag-button"
+					title="the-beach-boys" rel="1">
+					the-beach-boys
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-clean"
+					class="tag-button"
+					title="the-clean" rel="1">
+					the-clean
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-ex"
+					class="tag-button"
+					title="the-ex" rel="1">
+					the-ex
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-focus-group"
+					class="tag-button"
+					title="the-focus-group" rel="1">
+					the-focus-group
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-great-gatsby"
+					class="tag-button"
+					title="the-great-gatsby" rel="1">
+					the-great-gatsby
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-guardian"
+					class="tag-button"
+					title="the-guardian" rel="1">
+					the-guardian
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-jetsons"
+					class="tag-button"
+					title="the-jetsons" rel="1">
+					the-jetsons
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-june-brides"
+					class="tag-button"
+					title="the-june-brides" rel="1">
+					the-june-brides
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-powers-of-ten"
+					class="tag-button"
+					title="the-powers-of-ten" rel="1">
+					the-powers-of-ten
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-sea-cake"
+					class="tag-button"
+					title="the-sea-cake" rel="1">
+					the-sea-cake
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-slits"
+					class="tag-button"
+					title="the-slits" rel="1">
+					the-slits
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-star-spangled-banner"
+					class="tag-button"
+					title="the-star-spangled-banner" rel="1">
+					the-star-spangled-banner
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-twilight-zone"
+					class="tag-button"
+					title="the-twilight-zone" rel="1">
+					the-twilight-zone
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-wind-blowing-in-your-hair"
+					class="tag-button"
+					title="the-wind-blowing-in-your-hair" rel="1">
+					the-wind-blowing-in-your-hair
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-winstons"
+					class="tag-button"
+					title="the-winstons" rel="1">
+					the-winstons
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-wire-magazine"
+					class="tag-button"
+					title="the-wire-magazine" rel="1">
+					the-wire-magazine
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="the-wizard-of-oz"
+					class="tag-button"
+					title="the-wizard-of-oz" rel="1">
+					the-wizard-of-oz
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="third-uncle"
+					class="tag-button"
+					title="third-uncle" rel="1">
+					third-uncle
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="thrill-jockey"
+					class="tag-button"
+					title="thrill-jockey" rel="1">
+					thrill-jockey
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="thrill-jockey-records"
+					class="tag-button"
+					title="thrill-jockey-records" rel="1">
+					thrill-jockey-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="thursday-afternoon"
+					class="tag-button"
+					title="thursday-afternoon" rel="1">
+					thursday-afternoon
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="tim-hecker"
+					class="tag-button"
+					title="tim-hecker" rel="1">
+					tim-hecker
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="time-lapse-photography"
+					class="tag-button"
+					title="time-lapse-photography" rel="1">
+					time-lapse-photography
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="time-machines"
+					class="tag-button"
+					title="time-machines" rel="1">
+					time-machines
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="tindersticks"
+					class="tag-button"
+					title="tindersticks" rel="1">
+					tindersticks
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="toto"
+					class="tag-button"
+					title="toto" rel="1">
+					toto
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="touch-records"
+					class="tag-button"
+					title="touch-records" rel="1">
+					touch-records
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="trains"
+					class="tag-button"
+					title="trains" rel="1">
+					trains
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="trees"
+					class="tag-button"
+					title="trees" rel="1">
+					trees
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="trish-keenan"
+					class="tag-button"
+					title="trish-keenan" rel="1">
+					trish-keenan
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="tv-commercial"
+					class="tag-button"
+					title="tv-commercial" rel="1">
+					tv-commercial
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="twenty-four-hours"
+					class="tag-button"
+					title="twenty-four-hours" rel="1">
+					twenty-four-hours
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ubuweb"
+					class="tag-button"
+					title="ubuweb" rel="1">
+					ubuweb
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="uk-singles-charts"
+					class="tag-button"
+					title="uk-singles-charts" rel="1">
+					uk-singles-charts
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="united-states"
+					class="tag-button"
+					title="united-states" rel="1">
+					united-states
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="urban-ecology"
+					class="tag-button"
+					title="urban-ecology" rel="1">
+					urban-ecology
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="used-auto-parts"
+					class="tag-button"
+					title="used-auto-parts" rel="1">
+					used-auto-parts
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="vegetables"
+					class="tag-button"
+					title="vegetables" rel="1">
+					vegetables
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="vhs"
+					class="tag-button"
+					title="vhs" rel="1">
+					vhs
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="vienna-vegetable-orchestra"
+					class="tag-button"
+					title="vienna-vegetable-orchestra" rel="1">
+					vienna-vegetable-orchestra
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="vincent-gallo"
+					class="tag-button"
+					title="vincent-gallo" rel="1">
+					vincent-gallo
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="vocal-performance"
+					class="tag-button"
+					title="vocal-performance" rel="1">
+					vocal-performance
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="voiceovers"
+					class="tag-button"
+					title="voiceovers" rel="1">
+					voiceovers
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="washington-dc"
+					class="tag-button"
+					title="washington-dc" rel="1">
+					washington-dc
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="wax-cylinder-preservation-and-digitization-project"
+					class="tag-button"
+					title="wax-cylinder-preservation-and-digitization-project" rel="1">
+					wax-cylinder-preservation-and-digitization-project
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="wax-cylinders"
+					class="tag-button"
+					title="wax-cylinders" rel="1">
+					wax-cylinders
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="wfmu"
+					class="tag-button"
+					title="wfmu" rel="1">
+					wfmu
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="wire"
+					class="tag-button"
+					title="wire" rel="1">
+					wire
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="wrong-text-messages"
+					class="tag-button"
+					title="wrong-text-messages" rel="1">
+					wrong-text-messages
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="x-ray-spex"
+					class="tag-button"
+					title="x-ray-spex" rel="1">
+					x-ray-spex
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="yacht-rock"
+					class="tag-button"
+					title="yacht-rock" rel="1">
+					yacht-rock
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="yayoi-kusuma"
+					class="tag-button"
+					title="yayoi-kusuma" rel="1">
+					yayoi-kusuma
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="yeti-magazine"
+					class="tag-button"
+					title="yeti-magazine" rel="1">
+					yeti-magazine
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="yo-la-tengo"
+					class="tag-button"
+					title="yo-la-tengo" rel="1">
+					yo-la-tengo
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="yugoslavia"
+					class="tag-button"
+					title="yugoslavia" rel="1">
+					yugoslavia
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="yugoslavian-monuments"
+					class="tag-button"
+					title="yugoslavian-monuments" rel="1">
+					yugoslavian-monuments
+					<sup>1</sup>
+				</a>
+				
+				<a data-sort="0169"
+					data-encode="ze-frank"
+					class="tag-button"
+					title="ze-frank" rel="1">
+					ze-frank
+					<sup>1</sup>
+				</a>
+			</div>
+
+            <!-- Article List -->
+			<div class="mini-post-list js-result d-none"><section>
+				<span class="fa listing-seperator">
+					<span class="tag-text">2020</span>
+				</span><div class="post-preview item" data-tags="">
+				    <a href="/2020/07/06/disco-84/">
+				        <h2 class="post-title">
+                            Disco 84
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="">
+				    <a href="/2020/07/05/just_like_starting_over/">
+				        <h2 class="post-title">
+                            Just Like Starting Over...
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div></section><section>
+				<span class="fa listing-seperator">
+					<span class="tag-text">2015</span>
+				</span><div class="post-preview item" data-tags="Meta">
+				    <a href="/2015/01/29/hello-2015/">
+				        <h2 class="post-title">
+                            Hello 2015
+				        </h2>
+				        
+				        <h3 class="post-subtitle">
+				             "Hello World, Hello Blog"
+				        </h3>
+				        
+				    </a>
+					<hr>
+				</div></section><section>
+				<span class="fa listing-seperator">
+					<span class="tag-text">2013</span>
+				</span><div class="post-preview item" data-tags="lp-records,recording-industry,vinyl">
+				    <a href="/art-photography/music/2013/02/27/how-records-are-born-part-two/">
+				        <h2 class="post-title">
+                            How Records Are Born (Part Two)
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div></section><section>
+				<span class="fa listing-seperator">
+					<span class="tag-text">2012</span>
+				</span><div class="post-preview item" data-tags="choral-performance,early-music,johannes-ockeghem,sound-manipulation,the-hilliard-ensemble,video-art,vocal-performance">
+				    <a href="/film/music/2012/12/09/the-hilliard-ensemble-sings-johannes-ockeghems-deo-gratias/">
+				        <h2 class="post-title">
+                            The Hilliard Ensemble Sings Johannes Ockeghem's Deo Gratias
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="abandoned-structures,architecture,sculpture,urban-decay,yugoslavia,yugoslavian-monuments">
+				    <a href="/art-photography/2012/11/30/yugoslavian-monuments/">
+				        <h2 class="post-title">
+                            Yugoslavian Monuments
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="biological-lumination,flieflies,insects,photography,sexual-attraction,summer">
+				    <a href="/art-photography/life/2012/11/12/summers-fireflies/">
+				        <h2 class="post-title">
+                            Summer's Fireflies
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="computer-generated-art,film,graphic-design,station-identification-segments,television">
+				    <a href="/art-photography/film/2012/11/03/television-identification-videos/">
+				        <h2 class="post-title">
+                            Television Identification Videos
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="blurred,cats,french-film,happy-halloween,voiceovers">
+				    <a href="/art-photography/film/life/2012/10/31/henri-on-lhaunting/">
+				        <h2 class="post-title">
+                            Henri Speaks Out On: L'Haunting
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="ambient,engine-idle,noise,star-trek,twenty-four-hours">
+				    <a href="/art-photography/film/music/2012/10/30/ambient-engine-noise-24-hour-idle/">
+				        <h2 class="post-title">
+                            Ambient Engine Noise (24 Hour Idle)
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="album-covers,factory-records,graphic-design,joy-division,peter-saville,pulsars">
+				    <a href="/art-photography/music/2012/10/22/joy-divisions-unknown-pleasures-album-cover/">
+				        <h2 class="post-title">
+                            Joy Division's Unknown Pleasures Album Cover
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="documentary-films,lo-fi,nashville,r-stevie-moore,tennessee">
+				    <a href="/film/music/2012/10/16/i-am-a-genius-and-theres-nothing-i-can-do-about-it/">
+				        <h2 class="post-title">
+                            I Am A Genius (And There's Nothing I Can Do About It)
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="lp-records,recording-industry,vinyl">
+				    <a href="/art-photography/music/2012/10/12/how-records-are-born/">
+				        <h2 class="post-title">
+                            How Records Are Born
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="ahae,change,nature,photography,seasons,south-korea">
+				    <a href="/art-photography/2012/09/12/two-million-photos-from-a-single-window/">
+				        <h2 class="post-title">
+                            Two Million Photos From A Single Window
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="cat-adoption,fuzzy-friends,roulette,video">
+				    <a href="/life/2012/09/08/catroulette/">
+				        <h2 class="post-title">
+                            Catroulette
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="curated-art,google-maps,google-street-view,jon-rafman,photography">
+				    <a href="/art-photography/life/2012/09/06/view-from-the-street/">
+				        <h2 class="post-title">
+                            View From The Street
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="best-of-list,music">
+				    <a href="/music/2012/08/24/my-peoples-list/">
+				        <h2 class="post-title">
+                            My People's List
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="electronic-music,jim-henson,raymond-scott,super-8-films,tv-commercial">
+				    <a href="/film/music/2012/07/20/jim-henson-raymond-scotts-bufferin-commercial/">
+				        <h2 class="post-title">
+                            Jim Henson & Raymond Scott's Bufferin TV Commercial
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="home-video,interviews,time-machines,video">
+				    <a href="/film/life/2012/07/08/man-interviews-his-twelve-year-old-self/">
+				        <h2 class="post-title">
+                            Man Interviews His Twelve Year Old Self
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="documentary-films,ernest-borgnine,goodbyes,road-trips">
+				    <a href="/film/2012/07/08/ernest-borgnine-off-the-bus/">
+				        <h2 class="post-title">
+                            Ernest Borgnine Off The Bus
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="coming-out,frank-ocean,odd-future">
+				    <a href="/life/music/2012/07/07/we-got-your-back-frank-ocean/">
+				        <h2 class="post-title">
+                            We Got Your Back, Frank Ocean
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="bill-orcutt,francis-scott-key,harry-pussy,july-4th,the-star-spangled-banner">
+				    <a href="/music/2012/07/04/the-star-spangled-banner/">
+				        <h2 class="post-title">
+                            The Star Spangled Banner
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="central-washington-state,documentaries,donnie-joe-emerson,home-recording,long-lost-recordings,yacht-rock">
+				    <a href="/film/life/music/2012/07/02/the-rock-n-roll-farmers/">
+				        <h2 class="post-title">
+                            The Rock-N-Roll Farmers
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="new-york-city,short-films,stairs,subway">
+				    <a href="/film/life/2012/07/01/36th-street-station-subway-stairs/">
+				        <h2 class="post-title">
+                            36th Street Station Subway Stairs
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="being-busy,new-york-times,opinion">
+				    <a href="/life/printed-matter/2012/07/01/trapped-by-busy/">
+				        <h2 class="post-title">
+                            Trapped By Busy
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="documentaries,joe-meek,music-recording,pop,songwriting,telstar">
+				    <a href="/film/music/2012/06/30/the-very-strange-story-of-the-legendary-joe-meek/">
+				        <h2 class="post-title">
+                            The Very Strange Story Of The Legendary Joe Meek
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="audio,dial-a-poem,museum-of-modern-art,performance-art,poetry,spoken-word,telephones">
+				    <a href="/art-photography/2012/06/29/dial-a-poem/">
+				        <h2 class="post-title">
+                            Dial-A-Poem
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="brian-eno,thursday-afternoon">
+				    <a href="/film/life/music/2012/06/28/thursday-afternoon/">
+				        <h2 class="post-title">
+                            Thursday Afternoon
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="auto-tune,mister-rogers,npr,pbs,remixed,symphony-of-science,video-art">
+				    <a href="/art-photography/life/music/2012/06/22/garden-of-your-mind/">
+				        <h2 class="post-title">
+                            Garden Of Your Mind
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="comus,maximum-axial-tilt,nature,pagan,ritual-music,summer-solstice">
+				    <a href="/life/music/2012/06/21/summer-solstice/">
+				        <h2 class="post-title">
+                            Summer Solstice
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="amusement-parks,china,urban-decay">
+				    <a href="/art-photography/life/2012/06/19/abandoned-disneyland/">
+				        <h2 class="post-title">
+                            Abandoned Disneyland
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="hit-singles,music-journalism,uk-singles-charts">
+				    <a href="/music/2012/06/01/sixty-years-of-number-one-hits/">
+				        <h2 class="post-title">
+                            Sixty Years Of Number One Hits
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="american-folk,country-music,doc-watson,folk-music,guitar">
+				    <a href="/music/2012/05/30/fare-thee-well-doc-watson/">
+				        <h2 class="post-title">
+                            Fare Thee Well, Doc Watson
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art-installations,experimental-film,montreal,sound,sound-installations">
+				    <a href="/film/music/2012/05/25/cinechamber-at-the-mutek-music-festival/">
+				        <h2 class="post-title">
+                            CineChamber at the Mutek Music Festival
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="composite-sketches,favorite-blogs,law-enforcement,literary-characters">
+				    <a href="/art-photography/printed-matter/2012/05/24/the-composites/">
+				        <h2 class="post-title">
+                            The Composites
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="electronic-music,google-doodle,moog-synthesizer,robert-moog">
+				    <a href="/music/2012/05/23/moogie-wonderland/">
+				        <h2 class="post-title">
+                            Moogie Wonderland
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="bugs-bunny,chuck-jones,looney-tunes,merrie-melodies">
+				    <a href="/art-photography/2012/05/22/how-to-draw-a-bunny/">
+				        <h2 class="post-title">
+                            How To Draw A Bunny
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="a-joyful-noise,documentaries,film,free-jazz,jazz,sun-ra,the-arkestra">
+				    <a href="/film/music/2012/05/22/a-joyful-noise/">
+				        <h2 class="post-title">
+                            A Joyful Noise
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="adam-yauch,beastie-boys,family-entertainment,mca,music-video,oregon,portland">
+				    <a href="/film/music/2012/05/16/sabotage/">
+				        <h2 class="post-title">
+                            Sabotage
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="charles-ray-eames,educational-films,short-films,the-powers-of-ten">
+				    <a href="/art-photography/film/2012/05/15/powers-of-ten/">
+				        <h2 class="post-title">
+                            Powers Of Ten
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art-museums,philadelphia,the-barnes-foundation,time-lapse-photography">
+				    <a href="/art-photography/life/2012/05/13/the-barnes-foundation-in-fairmount/">
+				        <h2 class="post-title">
+                            The Barnes Foundation in Fairmount
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="fedge,jeff,music-diary-project">
+				    <a href="/life/music/2012/05/09/goodbye-jeff/">
+				        <h2 class="post-title">
+                            Goodbye Jeff
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="music-diary-project">
+				    <a href="/life/music/2012/05/08/music-diary-project/">
+				        <h2 class="post-title">
+                            Music Diary Project
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="adam-yauch,beastie-boys,mca,nathaniel-hornblower">
+				    <a href="/music/2012/05/04/pass-the-mic/">
+				        <h2 class="post-title">
+                            Pass The Mic
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="bon-iver,erotic-stories">
+				    <a href="/music/2012/04/30/bon-iver-erotic-stories/">
+				        <h2 class="post-title">
+                            Bon Iver Erotic Stories
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="buckminster-fuller,modern-art,ruth-awasa,san-francisco,sculpture,wire">
+				    <a href="/art-photography/2012/04/25/ruth-awasa-wired/">
+				        <h2 class="post-title">
+                            Ruth Awasa: Wired
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="american-bandstand,captain-beefheart,dick-clark,diddy-wah-diddy,telephones">
+				    <a href="/music/2012/04/19/getting-down-with-the-captain/">
+				        <h2 class="post-title">
+                            Getting Down With The Captain
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="good-morning,hirise-orbiter,mars,outer-space,sun-ra">
+				    <a href="/art-photography/life/2012/04/15/there-are-other-worlds-they-have-not-told-you-of/">
+				        <h2 class="post-title">
+                            There Are Other Worlds (They Have Not Told You Of)
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="">
+				    <a href="/2012/04/14/favorite-quotes/">
+				        <h2 class="post-title">
+                            Favorite Quotes
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="dynamite,josephine,movies,napoleon-bonaparte,overheard-conversations">
+				    <a href="/film/life/overheard-conversations/2012/04/14/overheard-conversations-napoleon-bonaparte/">
+				        <h2 class="post-title">
+                            Napoleon Bonaparte
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="online-culture,pep-talks,ze-frank">
+				    <a href="/art-photography/film/2012/04/14/an-invocation-for-beginnings/">
+				        <h2 class="post-title">
+                            An Invocation For Beginnings
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="arcade-games,flash-mobs,skee-ball,social-media,used-auto-parts">
+				    <a href="/film/2012/04/12/caines-arcade/">
+				        <h2 class="post-title">
+                            Caine's Arcade
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="james-bond-movies,video-art">
+				    <a href="/film/2012/04/12/22-bonds-for-one-minute/">
+				        <h2 class="post-title">
+                            22 Bonds For One Minute
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="charles-gayle,free-jazz,jazz,saxophone,street-busking,streets-the-clown">
+				    <a href="/music/2012/04/11/charles-gayle-is-streets-the-clown/">
+				        <h2 class="post-title">
+                            Charles Gayle Is Streets The Clown
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="dustin-wong,favorites-of-2012,guitar,steve-reich,thrill-jockey-records">
+				    <a href="/music/2012/04/10/dustin-wongs-dreams-say-view-create-shadow-leads/">
+				        <h2 class="post-title">
+                            Dustin Wong's Dreams Say, View, Create, Shadow Leads
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="433,john-cage,nicolas-cage">
+				    <a href="/film/music/2012/04/09/cage-does-cage/">
+				        <h2 class="post-title">
+                            Cage Does Cage
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art,christoph-meier">
+				    <a href="/art-photography/2012/04/06/setting-14-by-christoph-meier/">
+				        <h2 class="post-title">
+                            Setting #14, By Christoph Meier
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="film,free-jazz,jazz,psychedelic-film,space-is-the-place,sun-ra,the-arkestra">
+				    <a href="/film/music/2012/04/05/space-is-the-place/">
+				        <h2 class="post-title">
+                            Space Is The Place
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="bridget-riley,modern-art,optical-art">
+				    <a href="/art-photography/2012/04/03/rhythm-repetition-are-the-root-of-movement/">
+				        <h2 class="post-title">
+                            Rhythm & Repetition Are The Root Of Movement
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="happiness,love,magnetic-resonance-imaging,science,short-films,stanford-center-for-cognitive-and-neurobiological-imaging">
+				    <a href="/film/life/2012/04/02/love-is-like-a-feeling-for-someone-you-have-feelings-about/">
+				        <h2 class="post-title">
+                            Love Is Like A Feeling For Someone You Have Feelings About
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="banjo,bill-monroe,bluegrass,flatt-scruggs,foggy-mountain-boys,holy-trinity-of-bluegrass,music,scruggs-style">
+				    <a href="/music/2012/03/29/thank-you-earl-scruggs/">
+				        <h2 class="post-title">
+                            Thank You Earl Scruggs
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="george-washington,movie-soundtracks,movies,pavillion,sam-prekop,sparklers,the-sea-cake">
+				    <a href="/film/music/2012/03/16/pavillion/">
+				        <h2 class="post-title">
+                            Pavillion
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="35-mm-film-projection,museum-of-modern-art,paul-clipson,san-francisco">
+				    <a href="/film/2012/03/15/reel-movies-from-paul-clipson/">
+				        <h2 class="post-title">
+                            Reel Movies From Paul Clipson
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="discord-records,documentaries,fugazi,washington-dc">
+				    <a href="/film/music/2012/03/04/instrument-ten-years-with-fugazi/">
+				        <h2 class="post-title">
+                            Instrument - Ten Years With Fugazi
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="belbury-poly,ghost-box,graphic-design,intro-design-company,julian-house">
+				    <a href="/film/music/2012/02/24/summer-round/">
+				        <h2 class="post-title">
+                            Summer Round
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="bbc-television,out-of-the-unknown,the-twilight-zone">
+				    <a href="/film/2012/02/20/out-of-the-unknown/">
+				        <h2 class="post-title">
+                            Out Of The Unknown
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="rockabilly,the-jetsons,wrong-text-messages">
+				    <a href="/film/life/music/2012/02/20/eep-opp-ork-ah-ah/">
+				        <h2 class="post-title">
+                            Eep Opp Ork Ah-Ah!
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="dogs,photography,travel">
+				    <a href="/art-photography/2012/02/05/add-this-to-my-list-of-favorite-blogs/">
+				        <h2 class="post-title">
+                            Add This To My List Of Favorite Blogs
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="amen-break,drum-breaks,drumnbass,funky-soul,hip-hop,history-of-music,sampling,the-winstons">
+				    <a href="/film/life/music/2012/02/03/hallelujah-for-the-amen-break/">
+				        <h2 class="post-title">
+                            Hallelujah For The Amen Break
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="bill-boggs,guided-by-voices,matador-records,music-videos,pavement,record-labels,spoon,vhs,yo-la-tengo">
+				    <a href="/film/music/2012/02/02/whats-up-matador/">
+				        <h2 class="post-title">
+                            What's Up Matador
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="78-rpm-records,early-20th-century-sound-recordings,ethnic-music,npr,shellac">
+				    <a href="/music/2012/01/24/in-search-of-lost-time/">
+				        <h2 class="post-title">
+                            In Search Of Lost Time
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorites-of-2011">
+				    <a href="/life/2012/01/23/re-flections-solutions-minders/">
+				        <h2 class="post-title">
+                            RE: flections, solutions, & minders
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorites-of-2011,music">
+				    <a href="/life/music/2012/01/23/annoying-self-indulgent-list-of-my-favorite-music-of-2011/">
+				        <h2 class="post-title">
+                            Annoying & Self-Indulgent List Of My Favorite Music of 2011
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="community-art-projects,film,star-wars">
+				    <a href="/art-photography/film/2012/01/21/star-wars-uncut-the-directors-cut/">
+				        <h2 class="post-title">
+                            Star Wars Uncut: The Director's Cut
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="album-covers,deceased-musicians,record-sleeves">
+				    <a href="/art-photography/music/2012/01/17/live-music/">
+				        <h2 class="post-title">
+                            Live Music!
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="documentaries,lcd-soundsystem,live-music">
+				    <a href="/music/2012/01/11/shut-up-and-play-the-hits/">
+				        <h2 class="post-title">
+                            Shut Up and Play The Hits
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art-installations,kids,queensland-gallery-of-modern-art,sticker-art,yayoi-kusuma">
+				    <a href="/art-photography/2012/01/06/the-obliteration-room/">
+				        <h2 class="post-title">
+                            The Obliteration Room
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div></section><section>
+				<span class="fa listing-seperator">
+					<span class="tag-text">2011</span>
+				</span><div class="post-preview item" data-tags="coffee,dogs-in-cars,puppies,the-wind-blowing-in-your-hair">
+				    <a href="/art-photography/film/life/music/2011/12/13/dogs-in-cars/">
+				        <h2 class="post-title">
+                            Dogs In Cars
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="billie-holiday,c86,chess-blues,music,nme,sarah-records,soul,stax">
+				    <a href="/music/2011/12/05/press-play-and-record/">
+				        <h2 class="post-title">
+                            Press Play And Record
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="graphic-design,packaging,typography">
+				    <a href="/art-photography/life/2011/12/04/less-is-more/">
+				        <h2 class="post-title">
+                            Sometimes, Less Is More
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="film,harmonic-motion,kinetic-art,physics,science,video">
+				    <a href="/art-photography/film/life/2011/11/21/the-choreography-of-fifteen-pendulums-experiencing-simple-harmonic-and-non-harmonic-motion/">
+				        <h2 class="post-title">
+                            The Choreography of Fifteen Pendulums Experiencing Simple Harmonic (and Non-Harmonic) Motion
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="hipsters,new-york-times,portland">
+				    <a href="/life/printed-matter/2011/11/18/generation-sell/">
+				        <h2 class="post-title">
+                            Generation Sell
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="drinkify,drinking,music">
+				    <a href="/life/music/2011/11/17/setting-the-mood-with-some-music-and-cocktails/">
+				        <h2 class="post-title">
+                            Setting The Mood With Some Music And Cocktails
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorite-blogs,graphic-design,illustration,images,lithography,photography">
+				    <a href="/art-photography/printed-matter/2011/11/15/50-watts/">
+				        <h2 class="post-title">
+                            50 Watts
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="music,portland,pulse-emitter,root-strata">
+				    <a href="/music/2011/11/14/meditative-music-with-pulse-emitter/">
+				        <h2 class="post-title">
+                            Meditative Music with Pulse Emitter
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorite-blogs,nostalgia">
+				    <a href="/art-photography/life/2011/11/13/childrens-bizzare/">
+				        <h2 class="post-title">
+                            Childrens' Bizzare
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="album-covers,kittens,npr">
+				    <a href="/art-photography/music/2011/11/12/the-kitten-covers/">
+				        <h2 class="post-title">
+                            The Kitten Covers
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="freitag-products,recycled-products,technology">
+				    <a href="/life/2011/11/11/freitag-pad-wrapper/">
+				        <h2 class="post-title">
+                            Freitag Pad Wrapper
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorite-blogs,nostalgia,stopping-off-place">
+				    <a href="/art-photography/life/2011/11/10/balloons-explosion-skirt-spear/">
+				        <h2 class="post-title">
+                            Balloons, Explosion, Skirt, Spear
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="france,modern-composition,musique-concrete,pierre-henry,tape-manipulation">
+				    <a href="/film/music/2011/11/05/pierre-henry-the-art-of-sounds/">
+				        <h2 class="post-title">
+                            Pierre Henry: The Art Of Sounds
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="brian-wilson,california,jamake-highwater,the-beach-boys">
+				    <a href="/life/music/2011/11/02/interview-with-brian-wilson/">
+				        <h2 class="post-title">
+                            Interview With Brian Wilson
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="fandom,music,news,scented-candles">
+				    <a href="/music/2011/10/21/music-is-a-scented-candle/">
+				        <h2 class="post-title">
+                            Music Is A Scented Candle
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorite-blogs,graphic-design,photography,record-sleeves,sleeves-received,the-wire-magazine,typography">
+				    <a href="/art-photography/music/printed-matter/2011/10/15/sleeves-received/">
+				        <h2 class="post-title">
+                            Sleeves Received
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="graphic-design,occupy-wall-street,posters">
+				    <a href="/art-photography/life/printed-matter/2011/10/12/occupy-posters/">
+				        <h2 class="post-title">
+                            Occupy Posters
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="dark-side-of-the-moon,judy-garland,movies,pink-floyd,synchronicity,the-wizard-of-oz,toto">
+				    <a href="/art-photography/film/life/music/2011/10/10/dark-side-of-the-rainbow/">
+				        <h2 class="post-title">
+                            Dark Side Of The Rainbow
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="africa,democratic-republic-of-congo,drc-music,warp-records">
+				    <a href="/music/2011/10/07/drc-music/">
+				        <h2 class="post-title">
+                            DRC Music
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="acoustic-guitar,bert-jansch,british-folk,folk,obituaries,pentangle">
+				    <a href="/music/2011/10/05/goodbye-bert-jansch/">
+				        <h2 class="post-title">
+                            Goodbye Bert Jansch
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="ecm-records,minimalism,modern-classical,nonesuch-records,npr,steve-reich">
+				    <a href="/music/2011/10/03/happy-birthday-steve-reich/">
+				        <h2 class="post-title">
+                            Happy Birthday Steve Reich!
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="finland,society,video">
+				    <a href="/film/life/2011/10/01/i-wanna-move-to-finland/">
+				        <h2 class="post-title">
+                            I Wanna Move To Finland
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="philip-jeck,touch-records">
+				    <a href="/music/2011/09/22/philip-jeck-live-touch-radio/">
+				        <h2 class="post-title">
+                            Philip Jeck Live - Touch Radio
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorite-blogs,film,library-music,nostalgia,super-8-films">
+				    <a href="/art-photography/film/music/printed-matter/2011/09/01/toys-techniques/">
+				        <h2 class="post-title">
+                            Toys & Techniques
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="ethics,future-cities,urban-ecology">
+				    <a href="/life/2011/08/22/urbanology/">
+				        <h2 class="post-title">
+                            Urbanology
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="arson,independent-record-labels,london,music,riots">
+				    <a href="/life/music/2011/08/11/londons-burning/">
+				        <h2 class="post-title">
+                            London's Burning
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art,europe,film,food,learning,photography,travel">
+				    <a href="/film/life/2011/08/08/move-learn-eat/">
+				        <h2 class="post-title">
+                            Move. Learn. Eat.
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="field-recordings,indian-records,native-american-music">
+				    <a href="/music/2011/07/23/indian-records/">
+				        <h2 class="post-title">
+                            Indian Records
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="brother-from-another-planet,documentary,jazz,music,outer-space,sun-ra">
+				    <a href="/film/music/2011/07/21/brother-from-another-planet/">
+				        <h2 class="post-title">
+                            Brother From Another Planet
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art,favorite-blogs,graphic-design,images,media,photography">
+				    <a href="/art-photography/printed-matter/2011/07/15/ffffound/">
+				        <h2 class="post-title">
+                            FFFFOUND!
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="band-names,books,music">
+				    <a href="/music/printed-matter/2011/06/23/booking-bands/">
+				        <h2 class="post-title">
+                            Booking Bands
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="phonographs,the-wire,wax-cylinder-preservation-and-digitization-project,wax-cylinders,wfmu">
+				    <a href="/music/2011/06/08/sonic-archeology/">
+				        <h2 class="post-title">
+                            Sonic Archeology
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="being-boring,life,media,public-service-announcements">
+				    <a href="/life/2011/05/31/public-service-announcement/">
+				        <h2 class="post-title">
+                            Public Service Announcement
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="califone,erock,jamaican-gospel,richard-bishop,social-music,sun-city-girls,the-bats,the-clean,the-june-brides,yeti-magazine">
+				    <a href="/art-photography/music/2011/05/27/social-music/">
+				        <h2 class="post-title">
+                            Social Music
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorite-blogs,file-sharing,kenneth-goldsmith,music,the-wire,ubuweb">
+				    <a href="/life/music/printed-matter/2011/05/22/epiphanies/">
+				        <h2 class="post-title">
+                            Epiphanies
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="dj-mixes,finders-keepers,jazz,luk-thung,thailand">
+				    <a href="/music/2011/05/18/chris-menist-s-paradise-bangkok-dj-mix/">
+				        <h2 class="post-title">
+                            Chris Menist’s Paradise Bangkok DJ Mix
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="architecture,georgia,hilton-head,midnight-in-the-garden-of-good-and-evil,savannah,south-carolina,spanish-moss,spring-break">
+				    <a href="/art-photography/life/2011/05/10/midnight-in-the-garden-of-good-and-evil/">
+				        <h2 class="post-title">
+                            Midnight In The Garden Of Good And Evil
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorite-blogs,new-york-city,photography">
+				    <a href="/art-photography/2011/05/08/from-me-to-you/">
+				        <h2 class="post-title">
+                            From Me To You
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="ari-up,poly-styrene,punk,x-ray-spex">
+				    <a href="/music/2011/04/27/rest-serene-poly-styrene/">
+				        <h2 class="post-title">
+                            Rest Serene, Poly Styrene
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="aquarius-records,california,guitar,marisa-anderson,mississippi-records,oregon,portland,san-francisco">
+				    <a href="/life/music/2011/04/18/marisa-anderson-the-age-of-aquarius/">
+				        <h2 class="post-title">
+                            Marisa Anderson & The Age of Aquarius
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="brian-eno,family,fourth-uncle">
+				    <a href="/life/2011/04/05/fourth-uncle/">
+				        <h2 class="post-title">
+                            Fourth Uncle
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="chuck-person,favorites-of-2010,ford-lopatin,games,oneohtrix-point-never,root-blog">
+				    <a href="/music/2011/03/31/chuck-persons-eccojams/">
+				        <h2 class="post-title">
+                            Chuck Person's EccoJams
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="ambient,favorites-of-2011,kranky,live-performances,montreal,suoni-per-il-popolo,tim-hecker">
+				    <a href="/music/2011/03/28/tim-hecker-lives-and-performs-in-montreal/">
+				        <h2 class="post-title">
+                            Tim Hecker Lives and Performs in Montreal
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="mathematics,music,music-composition,portland">
+				    <a href="/music/2011/03/14/music-is-math/">
+				        <h2 class="post-title">
+                            Music Is Math
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="bibio,favorites-of-2011,music,warp-records">
+				    <a href="/music/2011/03/03/mind-bokeh/">
+				        <h2 class="post-title">
+                            Mind Bokeh
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="1000-reasons-never-to-kiss-a-boy,childrens-literature,martha-freeman">
+				    <a href="/life/printed-matter/2011/02/15/1000-reasons-never-to-kiss-a-boy/">
+				        <h2 class="post-title">
+                            1,000 Reasons Never To Kiss A Boy
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="music,thank-you,thrill-jockey">
+				    <a href="/music/2011/02/08/i-would-like-to-send-a-thank-you-to-thank-you/">
+				        <h2 class="post-title">
+                            I Would Like To Send A Thank You To Thank You
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="film,new-york-city,string-music">
+				    <a href="/art-photography/film/2011/02/04/conductor/">
+				        <h2 class="post-title">
+                            Conductor
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="bokeh,photography,photos">
+				    <a href="/art-photography/2011/02/04/bouquets-of-bokehs/">
+				        <h2 class="post-title">
+                            Bouquets of Bokehs
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorites-of-2010">
+				    <a href="/life/2011/02/04/annoying-self-indulgent-reflections-on-the-year-2010/">
+				        <h2 class="post-title">
+                            Annoying & Self-Indulgent Reflections On The Year 2010
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorites-of-2010,music">
+				    <a href="/music/2011/02/03/annoying-self-indulgent-list-of-my-favorite-music-of-2010/">
+				        <h2 class="post-title">
+                            Annoying & Self-Indulgent List Of My Favorite Music of 2010
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="broadcast,music,the-focus-group,trish-keenan,warp-records">
+				    <a href="/music/2011/01/14/tears-in-the-typing-pool/">
+				        <h2 class="post-title">
+                            Tears In The Typing Pool
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="actress,darkstar,dubstep,favorites-of-2010,james-blake,london,mount-kimbie,music">
+				    <a href="/music/2011/01/09/the-future-sound-of-london/">
+				        <h2 class="post-title">
+                            The Future Sound Of London
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorites-of-2010,photography,vampire-weekend">
+				    <a href="/art-photography/music/2011/01/09/contra-controversy/">
+				        <h2 class="post-title">
+                            Contra Controversy
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div></section><section>
+				<span class="fa listing-seperator">
+					<span class="tag-text">2010</span>
+				</span><div class="post-preview item" data-tags="film,photography">
+				    <a href="/art-photography/2010/12/27/test/">
+				        <h2 class="post-title">
+                            Winter & Summer Of Stop Motion Photography
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="cameo,film,lullaby,movies">
+				    <a href="/film/2010/12/26/the-ersatz-assurance-of-closed-doors/">
+				        <h2 class="post-title">
+                            The Ersatz Assurance Of Closed Doors
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="jazz,music,raul-midon,seu-jorge-almaz,sharon-jones-the-dapkings">
+				    <a href="/music/2010/12/26/raul-midon-seu-jorge-and-sharon-jones-the-dapkings/">
+				        <h2 class="post-title">
+                            Raul Midon, Seu Jorge, and Sharon Jones & The Dapkings
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="">
+				    <a href="/2010/12/26/favorite-sites/">
+				        <h2 class="post-title">
+                            Favorite Sites
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="happy-holidays,james-blake">
+				    <a href="/life/music/2010/12/24/happy-holidays-an-apology-and-my-favorite-record-of-2011/">
+				        <h2 class="post-title">
+                            Happy Holidays, An Apology, And My Favorite Record Of 2011
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="arhoolie-records,blues,folk">
+				    <a href="/music/2010/12/01/arhoolie-records-50th-anniversary/">
+				        <h2 class="post-title">
+                            Arhoolie Records 50th Anniversary
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="music,tindersticks">
+				    <a href="/life/music/2010/11/29/tindersticks-at-lautre-canal/">
+				        <h2 class="post-title">
+                            Tindersticks at L'Autre Canal
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="filiamotsa,jazz,music,the-ex">
+				    <a href="/music/2010/11/29/the-ex-filiamotsa-and-blue-taint-at-le-hublot/">
+				        <h2 class="post-title">
+                            The Ex, FiliaMotSa, and Blue Taint at Le Hublot
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art,liu-bolin,murals,paint,philadelphia-mural-arts-project">
+				    <a href="/art-photography/2010/11/26/blending-in/">
+				        <h2 class="post-title">
+                            Blending In
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="family,kanye-west,nutella,running,snow,thanksgiving">
+				    <a href="/life/2010/11/25/turn-up-the-lights-in-here-baby-extra-bright-i-want-yall-to-see-this/">
+				        <h2 class="post-title">
+                            Turn Up The Lights In Here Baby, Extra Bright, I Want Y'all To See This
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="coil,graphic-design,hipgnosis,music,peter-christopherson">
+				    <a href="/art-photography/film/music/2010/11/25/goodbye-peter-christopherson/">
+				        <h2 class="post-title">
+                            Goodbye Peter Christopherson
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorites-of-2010,music,sun-araw">
+				    <a href="/music/2010/11/22/sun-araws-on-patrol/">
+				        <h2 class="post-title">
+                            Sun Araw's On Patrol
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art,photos">
+				    <a href="/art-photography/life/2010/11/22/rip-it-up-and-start-again/">
+				        <h2 class="post-title">
+                            Rip It Up And Start Again
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="france,music,ninja-tune">
+				    <a href="/music/2010/11/22/magic-mirrors/">
+				        <h2 class="post-title">
+                            Magic Mirrors
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="facebook,film">
+				    <a href="/film/life/2010/11/22/baby-youre-a-rich-man/">
+				        <h2 class="post-title">
+                            Baby, You're A Rich Man
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="favorites-of-2010,music,vampire-weekend">
+				    <a href="/music/2010/11/22/vampire-weekends-contra/">
+				        <h2 class="post-title">
+                            Vampire Weekend's Contra
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="beer,film,the-great-gatsby,the-guardian">
+				    <a href="/life/printed-matter/2010/11/17/an-quiet-evening-with-henry-gatsby/">
+				        <h2 class="post-title">
+                            A Quiet Evening With Henry & Gatsby
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="europe,france,germany,photo-diary,trains">
+				    <a href="/art-photography/life/2010/11/03/its-always-sunny-in-heidelberg/">
+				        <h2 class="post-title">
+                            It's Always Sunny In Heidelberg
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art,christina-kubisch,sound">
+				    <a href="/art-photography/music/2010/11/03/christina-kubisch-s-paysages-de-la-ruhr/">
+				        <h2 class="post-title">
+                            Christina Kubisch’s Paysages De La Ruhr
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="jazz,marion-brown">
+				    <a href="/music/2010/10/26/afternoon-of-a-georgia-faun/">
+				        <h2 class="post-title">
+                            Afternoon Of A Georgia Faun
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="ari-up,the-slits">
+				    <a href="/music/2010/10/22/so-tough/">
+				        <h2 class="post-title">
+                            So Tough
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="jan-garbarek,jazz,music,the-hilliard-ensemble">
+				    <a href="/music/2010/10/20/jan-garbarek-the-hilliard-ensemble/">
+				        <h2 class="post-title">
+                            Jan Garbarek & The Hilliard Ensemble
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="au-revoir-simone,music,neon-indian,remix,song-of-the-week">
+				    <a href="/music/2010/10/18/remember-to-remember/">
+				        <h2 class="post-title">
+                            Remember To Remember
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="brian-eno,third-uncle">
+				    <a href="/life/2010/10/15/third-uncle/">
+				        <h2 class="post-title">
+                            Third Uncle
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="fonts,graphic-design,logos">
+				    <a href="/art-photography/2010/10/12/lessons-of-the-logo/">
+				        <h2 class="post-title">
+                            Lessons Of The Logo
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="film,kaboom,movies">
+				    <a href="/film/2010/10/12/kaboom/">
+				        <h2 class="post-title">
+                            Kaboom
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="jazz,lorchestre-national-de-jazz,music,vegetables,vienna-vegetable-orchestra">
+				    <a href="/music/2010/10/11/vienna-vegetable-orchestra-lorchestre-national-de-jazz/">
+				        <h2 class="post-title">
+                            Vienna Vegetable Orchestra & L'Orchestre National de Jazz
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="douglas-coupland,hipsters,media,opinion">
+				    <a href="/printed-matter/2010/10/11/opinions-from-the-globe-mail/">
+				        <h2 class="post-title">
+                            Opinions From The Globe & Mail
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="art,france,glass-skulls,records">
+				    <a href="/art-photography/life/music/2010/10/06/le-week-end-a-nancy/">
+				        <h2 class="post-title">
+                            Le Week-End à Nancy
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="editorial,facebook,new-york-times,opinion,social-media">
+				    <a href="/printed-matter/2010/10/06/non-evil-non-genius/">
+				        <h2 class="post-title">
+                            Non-Evil Non-Genius?
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="china,europe,high-speed-rail,united-states">
+				    <a href="/life/printed-matter/2010/10/04/high-speed-trains-in-the-united-states/">
+				        <h2 class="post-title">
+                            High Speed Trains In The United States
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="europe">
+				    <a href="/life/2010/10/04/european-heaven-hell/">
+				        <h2 class="post-title">
+                            European Heaven & Hell
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="music,portland,vincent-gallo,warp-records">
+				    <a href="/music/2010/09/29/when/">
+				        <h2 class="post-title">
+                            When
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="italy,plywood,travel,trees">
+				    <a href="/art-photography/life/2010/09/29/italian-plywood-factory/">
+				        <h2 class="post-title">
+                            Italian Plywood Factory
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="">
+				    <a href="/life/2010/09/27/anybody-home/">
+				        <h2 class="post-title">
+                            Hello? Anybody home?
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="coffee,france,language">
+				    <a href="/life/2010/09/13/parlez-vous/">
+				        <h2 class="post-title">
+                            Parlez-vous?
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="music">
+				    <a href="/music/2010/09/10/knoxville/">
+				        <h2 class="post-title">
+                            Knoxville
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="">
+				    <a href="/2010/09/09/about/">
+				        <h2 class="post-title">
+                            About
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div><div class="post-preview item" data-tags="">
+				    <a href="/life/2010/09/08/hello-world/">
+				        <h2 class="post-title">
+                            Welcome to the blog “If You Find The Earth Boring…”
+				        </h2>
+				        
+				    </a>
+					<hr>
+				</div></section>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <!-- SNS Link -->
+                
+
+
+<ul class="list-inline text-center">
+
+
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+                <p class="copyright text-muted">
+                    Copyright &copy; If You Find The Earth Boring... 2021
+                    <br>
+                    Powered by <a href="http://huangxuan.me">Hux Blog</a> |
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="100px"
+                        height="20px"
+                        src="https://ghbtns.com/github-btn.html?user=huxpro&repo=huxpro.github.io&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js "></script>
+
+<!-- Bootstrap Core JavaScript -->
+<!-- Currently, only navbar scroll-down effect at desktop still depends on this -->
+<script src="/js/bootstrap.min.js "></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js "></script>
+
+<!-- Simple Jekyll Search -->
+<script src="/js/simple-jekyll-search.min.js"></script>
+
+<!-- Service Worker -->
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+        var d = document, t = 'script',
+            o = d.createElement(t),
+            s = d.getElementsByTagName(t)[0];
+        o.src = u;
+        if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+        s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--
+     Because of the native support for backtick-style fenced code blocks
+     right within the Markdown is landed in Github Pages,
+     From V1.6, There is no need for Highlight.js,
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/
+     - https://github.com/jneen/rouge/wiki/list-of-supported-languages-and-lexers
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+
+
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    async('/js/jquery.tagcloud.js', function () {
+        $.fn.tagcloud.defaults = {
+            //size: {start: 1, end: 1, unit: 'em'},
+            color: { start: '#bbbbee', end: '#2f93b4' },
+        };
+        $('#tag_cloud a').tagcloud();
+    })
+</script>
+<script src='/js/archive.js '></script>
+
+
+<!--fastClick.js -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js", function () {
+        var $nav = document.querySelector("nav");
+        if ($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+<!-- Side Catalog -->
+
+<script type="text/javascript">
+    function generateCatalog(selector) {
+
+        // interop with multilangual 
+        if ('' == 'true') {
+            _containerSelector = 'div.post-container.active'
+        } else {
+            _containerSelector = 'div.post-container'
+        }
+
+        // init
+        var P = $(_containerSelector), a, n, t, l, i, c;
+        a = P.find('h1,h2,h3,h4,h5,h6');
+
+        // clean
+        $(selector).html('')
+
+        // appending
+        a.each(function () {
+            n = $(this).prop('tagName').toLowerCase();
+            i = "#" + $(this).prop('id');
+            t = $(this).text();
+            c = $('<a href="' + i + '" rel="nofollow">' + t + '</a>');
+            l = $('<li class="' + n + '_nav"></li>').append(c);
+            $(selector).append(l);
+        });
+        return true;
+    }
+
+    generateCatalog(".catalog-body");
+
+    // toggle side catalog
+    $(".catalog-toggle").click((function (e) {
+        e.preventDefault();
+        $('.side-catalog').toggleClass("fold")
+    }))
+
+    /*
+     * Doc: https://github.com/davist11/jQuery-One-Page-Nav
+     * Fork by Hux to support padding
+     */
+    async("/js/jquery.nav.js", function () {
+        $('.catalog-body').onePageNav({
+            currentClass: "active",
+            changeHash: !1,
+            easing: "swing",
+            filter: "",
+            scrollSpeed: 700,
+            scrollOffset: 0,
+            scrollThreshold: .2,
+            begin: null,
+            end: null,
+            scrollChange: null,
+            padding: 80
+        });
+    });
+</script>
+
+
+
+<!-- Multi-Lingual -->
+
+
+<!-- Simple Jekyll Search -->
+<script>
+    // https://stackoverflow.com/questions/1912501/unescape-html-entities-in-javascript
+    function htmlDecode(input) {
+        var e = document.createElement('textarea');
+        e.innerHTML = input;
+        // handle case of empty input
+        return e.childNodes.length === 0 ? "" : e.childNodes[0].nodeValue;
+    }
+
+    SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('search-results'),
+        json: '/search.json',
+        searchResultTemplate: '<div class="post-preview item"><a href="{url}"><h2 class="post-title">{title}</h2><h3 class="post-subtitle">{subtitle}</h3><hr></a></div>',
+        noResultsText: 'No results',
+        limit: 50,
+        fuzzy: false,
+        // a hack to get escaped subtitle unescaped. for some reason, 
+        // post.subtitle w/o escape filter nuke entire search.
+        templateMiddleware: function (prop, value, template) {
+            if (prop === 'subtitle' || prop === 'title') {
+                if (value.indexOf("code")) {
+                    return htmlDecode(value);
+                } else {
+                    return value;
+                }
+            }
+        }
+    });
+
+    $(document).ready(function () {
+        var $searchPage = $('.search-page');
+        var $searchOpen = $('.search-icon');
+        var $searchClose = $('.search-icon-close');
+        var $searchInput = $('#search-input');
+        var $body = $('body');
+
+        $searchOpen.on('click', function (e) {
+            e.preventDefault();
+            $searchPage.toggleClass('search-active');
+            var prevClasses = $body.attr('class') || '';
+            setTimeout(function () {
+                $body.addClass('no-scroll');
+            }, 400)
+
+            if ($searchPage.hasClass('search-active')) {
+                $searchClose.on('click', function (e) {
+                    e.preventDefault();
+                    $searchPage.removeClass('search-active');
+                    $body.attr('class', prevClasses);  // from closure 
+                });
+                $searchInput.focus();
+            }
+        });
+    });
+</script>
+
+
+<!-- Image to hack wechat -->
+<img src="/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>
